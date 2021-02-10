@@ -8,7 +8,8 @@ const FileUpload = ({ onUpload }) => {
   };
   const readFile = (e) => {
     const uploadedFile = e.target.files[0];
-    if (!uploadedFile || uploadedFile.type !== "text/plain") {
+    const supportedFileTypes = ["text/plain", "text/csv"];
+    if (!uploadedFile || !supportedFileTypes.includes(uploadedFile.type)) {
       console.error("Invalid file selected");
       return;
     }
@@ -28,7 +29,7 @@ const FileUpload = ({ onUpload }) => {
           required
           ref={inputRef}
           type="file"
-          accept=".txt"
+          accept=".txt,.csv"
           onChange={readFile}
           hidden
         ></input>
