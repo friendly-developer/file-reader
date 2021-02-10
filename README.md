@@ -1,3 +1,10 @@
+# File Reader
+
+Upload a file in txt format. (Sample file available in example folder)
+Provide the delimter and the number of lines
+
+You would see the table representation of the data
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
