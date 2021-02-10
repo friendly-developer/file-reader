@@ -1,6 +1,6 @@
 # File Reader
 
-Hosted on (Github Pages)[https://friendly-developer.github.io/file-reader/]
+Hosted on [Github Pages](https://friendly-developer.github.io/file-reader/)
 
 Upload a file in txt format. (Sample file available in example folder)
 Provide the delimter and the number of lines
