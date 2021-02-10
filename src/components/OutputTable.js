@@ -18,11 +18,7 @@ const OutputTable = ({ formData, fileData }) => {
           {r}
         </div>
       ));
-      return (
-        <div key={row[0]} className="ui horizontal segments">
-          {convertedRows}
-        </div>
-      );
+      return <div className="ui horizontal segments">{convertedRows}</div>;
     });
   };
 

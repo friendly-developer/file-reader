@@ -32,7 +32,12 @@ const OutputForm = ({ onUpdate }) => {
       <div className="four wide column">
         <div className="ui labeled input">
           <div className="ui label">Lines</div>
-          <input type="number" value={lines} onChange={handleLinesChange} />
+          <input
+            type="number"
+            value={lines}
+            min="0"
+            onChange={handleLinesChange}
+          />
         </div>
       </div>
     </div>

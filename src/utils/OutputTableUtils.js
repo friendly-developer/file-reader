@@ -1,16 +1,17 @@
-export const processData = (formData, fileData) => {
+export const processData = ({ lines, delimiter }, fileData) => {
+  if (lines < 0) return [];
   const rows = fileData.split("\n");
   const modifiedRows = rows.map((row) => {
-    const updatedRow = row.split(formData.delimiter);
+    const updatedRow = row.split(delimiter);
     if (updatedRow.length > 4) {
       updatedRow.length = 4;
     }
     return updatedRow;
   });
 
-  if (modifiedRows.length > formData.lines) {
-    modifiedRows.length = formData.lines;
+  if (modifiedRows.length > lines) {
+    modifiedRows.length = lines;
   }
-
+  debugger;
   return modifiedRows;
 };
