@@ -4,10 +4,8 @@ import Output from "./Output";
 
 const Dashboard = () => {
   const [fileContents, setFileContents] = useState(null);
-  const onUpload = (e) => {
-    let contents = e.target.result;
-    setFileContents(contents);
-  };
+  const onUpload = (e) => setFileContents(e.target.result);
+
   return (
     <div className="ui container">
       <h1 className="ui header">File Reader</h1>
